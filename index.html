@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ajmal A – Digital Marketer & Business Development</title>
+<meta name="description" content="Portfolio of Ajmal A, a freelance digital marketer from Palakkad, Kerala, with experience in business development, data management and compliance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EDF3F0; --ink:#0D2420; --palm:#1C5B4F; --sun:#F4B02A; --mute:#4D6661; --card:#FFFFFF; --line:#C9D8D3;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Figtree","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0B1B18; --ink:#E8F1EE; --palm:#5FC2AC; --sun:#F4B02A; --mute:#9DB5AF; --card:#122824; --line:#24413B}
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--display);line-height:1.05;letter-spacing:-.02em}
+
+/* nav */
+header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font:800 1.25rem var(--display);text-decoration:none}
+.logo span{color:var(--sun)}
+nav ul{display:flex;gap:26px;list-style:none;padding:0}
+nav ul a{text-decoration:none;font-weight:500;color:var(--mute);transition:color .2s}
+nav ul a:hover{color:var(--ink)}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;background:var(--ink);color:var(--bg);font-weight:600;text-decoration:none;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px);background:var(--palm);color:#fff}
+.btn.sun{background:var(--sun);color:#0D2420}
+.btn.sun:hover{background:#ffc654;color:#0D2420}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--bg)}
+
+/* hero */
+.hero{padding:88px 0 72px;position:relative;overflow:hidden}
+.hero .hi{font-weight:500;color:var(--palm);font-size:1.15rem;margin-bottom:12px}
+.hero h1{font-size:clamp(4.2rem,17vw,12rem);font-weight:800;letter-spacing:-.045em}
+.hero h1 .a{color:var(--sun);display:inline-block}
+.hero .role{font:700 clamp(1.4rem,3.4vw,2.3rem)/1.2 var(--display);max-width:20ch;margin:22px 0 18px}
+.hero p.lead{max-width:56ch;color:var(--mute);font-size:1.15rem}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.ticker{margin-top:64px;border-block:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:16px 0}
+.ticker div{display:inline-flex;gap:42px;animation:slide 30s linear infinite;font:700 1.35rem var(--display);color:var(--palm)}
+.ticker i{font-style:normal;color:var(--sun)}
+@keyframes slide{to{transform:translateX(-50%)}}
+.hero>.wrap>*{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+.hero>.wrap>*:nth-child(2){animation-delay:.08s}.hero>.wrap>*:nth-child(3){animation-delay:.16s}
+.hero>.wrap>*:nth-child(4){animation-delay:.24s}.hero>.wrap>*:nth-child(5){animation-delay:.32s}.hero>.wrap>*:nth-child(6){animation-delay:.4s}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}}
+
+/* sections */
+section{padding:84px 0}
+h2{font-size:clamp(2rem,5vw,3.2rem);margin-bottom:36px}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:start}
+.about p{margin-bottom:16px;color:var(--mute)}
+.about p:first-child{color:var(--ink);font-size:1.25rem;font-weight:500}
+.facts{background:var(--ink);color:var(--bg);border-radius:20px;padding:28px}
+@media (prefers-color-scheme:dark){.facts{background:var(--palm);color:#07201B}}
+.facts dl{display:grid;gap:16px}
+.facts dt{font-size:.88rem;opacity:.7}
+.facts dd{font:700 1.15rem var(--display)}
+
+/* timeline */
+.tl{list-style:none;padding:0;position:relative;margin-left:8px}
+.tl:before{content:"";position:absolute;left:0;top:8px;bottom:8px;width:2px;background:var(--line)}
+.tl li{position:relative;padding:0 0 44px 36px}
+.tl li:before{content:"";position:absolute;left:-7px;top:9px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:3px solid var(--palm)}
+.tl li.now:before{background:var(--sun);border-color:var(--sun);box-shadow:0 0 0 6px color-mix(in srgb,var(--sun) 30%,transparent)}
+.tl .when{font-weight:600;color:var(--palm);font-size:.95rem}
+.tl h3{font-size:1.6rem;margin:4px 0 2px}
+.tl .org{color:var(--mute);font-weight:500;margin-bottom:12px}
+.tl ul{padding-left:18px;color:var(--mute);max-width:68ch}
+.tl ul li{padding:0 0 6px;position:static}
+.tl ul li:before{display:none}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.skill{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px}
+.skill:nth-child(3n+2){border-radius:18px 18px 18px 4px}
+.skill h3{font-size:1.3rem;margin-bottom:8px}
+.skill p{color:var(--mute);font-size:.98rem}
+.skill:hover{border-color:var(--sun)}
+
+/* education */
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.edu div{border-left:4px solid var(--sun);padding:4px 0 4px 20px}
+.edu b{font:700 1.25rem var(--display);display:block}
+.edu span{color:var(--mute)}
+
+/* contact */
+.contact{background:var(--ink);color:var(--bg);border-radius:28px;padding:clamp(32px,6vw,72px);margin-bottom:64px}
+@media (prefers-color-scheme:dark){.contact{background:var(--palm);color:#07201B}}
+.contact h2{margin-bottom:14px}
+.contact p{max-width:48ch;opacity:.85}
+.contact .btn{background:var(--sun);color:#0D2420}
+.contact .btn.ghost{background:transparent;color:inherit;box-shadow:inset 0 0 0 2px currentColor}
+.contact .btn.ghost:hover{background:var(--bg);color:var(--ink)}
+footer{padding:0 0 40px;color:var(--mute);font-size:.92rem}
+
+@media (max-width:760px){
+  nav ul{display:none}
+  .about{grid-template-columns:1fr}
+  .hero{padding-top:56px}
+  section{padding:60px 0}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<header>
+  <nav class="wrap" aria-label="Main">
+    <a class="logo" href="#top">Ajmal<span>.</span></a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+    </ul>
+    <a class="btn sun" href="#contact">Get in touch</a>
+  </nav>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <p class="hi">Hello, I’m</p>
+      <h1>Ajmal <span class="a">A</span></h1>
+      <p class="role">Digital marketer who builds brands people notice.</p>
+      <p class="lead">Freelance digital marketer from Palakkad, Kerala. I help businesses grow their online presence with clear messaging, steady social media and a sharp eye for detail.</p>
+      <div class="cta">
+        <a class="btn" href="#contact">Work with me</a>
+        <a class="btn ghost" href="#experience">See my experience</a>
+      </div>
+      <div class="ticker" aria-hidden="true">
+        <div>
+          <span>Digital marketing</span><i>●</i><span>Social media</span><i>●</i><span>Business development</span><i>●</i><span>Presentations</span><i>●</i><span>Compliance</span><i>●</i><span>Data accuracy</span><i>●</i>
+          <span>Digital marketing</span><i>●</i><span>Social media</span><i>●</i><span>Business development</span><i>●</i><span>Presentations</span><i>●</i><span>Compliance</span><i>●</i><span>Data accuracy</span><i>●</i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap about">
+      <div>
+        <h2>About me</h2>
+        <p>I’m a detail-oriented professional who has moved from data entry into business development and now into digital marketing.</p>
+        <p>Along the way I’ve handled business management, presentations and compliance, and I’ve learned to finish work efficiently without cutting corners. That mix of analysis and accuracy now goes into every campaign, post and pitch I work on.</p>
+        <p>Today I support businesses and brands with social media content, promotional messaging and online presence, aiming for better reach and engagement.</p>
+      </div>
+      <aside class="facts" aria-label="Quick facts">
+        <dl>
+          <div><dt>Based in</dt><dd>Palakkad, Kerala, India</dd></div>
+          <div><dt>Currently</dt><dd>Freelance digital marketer</dd></div>
+          <div><dt>Experience in</dt><dd>Marketing, business development, data entry</dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+919567476133">+91 95674 76133</a></dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <h2>Experience</h2>
+      <ol class="tl">
+        <li class="now">
+          <div class="when">April 2025 – Present</div>
+          <h3>Freelance Digital Marketer</h3>
+          <div class="org">Independent</div>
+          <ul>
+            <li>Support digital marketing activities for businesses and brands.</li>
+            <li>Create social media content and promotional messaging, and strengthen online brand presence.</li>
+            <li>Apply marketing and business development skills to improve audience reach and engagement.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="when">March 2023 – April 2025</div>
+          <h3>Business Development Manager</h3>
+          <div class="org">ADS Advantage</div>
+          <ul>
+            <li>Handled business management, presentations and compliance responsibilities.</li>
+            <li>Contributed to team performance with analytical skills and a productive approach.</li>
+            <li>Managed major responsibilities with a strong commitment to quality.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="when">February 2022 – February 2023</div>
+          <h3>Data Entry Specialist</h3>
+          <div class="org">R-Cell Diagnostics & Research Centre Pvt. Ltd., Calicut</div>
+          <ul>
+            <li>Entered data accurately and efficiently while maintaining data integrity.</li>
+            <li>Completed tasks on time and covered multiple shifts at the Calicut office.</li>
+            <li>Worked with diligence and close attention to detail.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2>What I do well</h2>
+      <div class="skills">
+        <article class="skill"><h3>Digital marketing</h3><p>Social media promotion, content and messaging that grow brand presence online.</p></article>
+        <article class="skill"><h3>Business development</h3><p>Client communication and relationship building that turn conversations into growth.</p></article>
+        <article class="skill"><h3>Data entry and accuracy</h3><p>Clean, reliable records with data integrity kept front of mind.</p></article>
+        <article class="skill"><h3>Presentations and management</h3><p>Clear presentations and organised business management for teams and clients.</p></article>
+        <article class="skill"><h3>Compliance and coordination</h3><p>Keeping tasks, people and requirements aligned so work stays on track.</p></article>
+        <article class="skill"><h3>Analytical thinking</h3><p>Careful attention to detail, backed by a habit of checking what the numbers say.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <h2>Education</h2>
+      <div class="edu">
+        <div><b>Higher Secondary (+2)</b><span>National Institute of Open Schooling (NIOS)<br>October 2016</span></div>
+        <div><b>SSLC</b><span>B.E.M. H.S.S., Palakkad<br>March 2013</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="padding-bottom:0">
+    <div class="wrap">
+      <div class="contact">
+        <h2>Let’s grow your brand.</h2>
+        <p>Have a project or a role in mind? Call or message me and tell me what you need.</p>
+        <div class="cta">
+          <a class="btn" href="https://wa.me/919567476133">Message on WhatsApp</a>
+          <a class="btn ghost" href="tel:+919567476133">Call +91 95674 76133</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="yr">2026</span> Ajmal A. Palakkad, Kerala, India.</div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
